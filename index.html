@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شركة الغدير النقي | Al Ghadeer Al Naqi — حلول صحية وسباكة متكاملة</title>
+<link rel="icon" type="image/png" href="images/logo-icon-navy.png">
+<meta name="description" content="شركة الغدير النقي — حلول صحية وسباكة متكاملة لمشاريع المقاولات والتطوير في المملكة العربية السعودية. توريد بالجملة، ضمان جودة، دعم فني، وتسليم في الموعد.">
+<meta property="og:title" content="شركة الغدير النقي | Al Ghadeer Al Naqi">
+<meta property="og:description" content="حلول صحية وسباكة متكاملة لمشاريع المقاولات في المملكة.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#15284C;
+  --navy-deep:#0E1C38;
+  --gold:#C9A24B;
+  --gold-soft:#D8B968;
+  --cream:#EDE1DB;
+  --cream-light:#F6EFEA;
+  --ink:#1B2335;
+  --muted:#6B7280;
+  --line:rgba(21,40,76,.12);
+  --white:#ffffff;
+  --shadow:0 18px 50px -20px rgba(14,28,56,.35);
+  --maxw:1240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Cairo',sans-serif;
+  color:var(--ink);
+  background:var(--cream-light);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.en{font-family:'Inter',sans-serif;direction:ltr}
+.serif{font-family:'Cormorant Garamond',serif}
+
+/* ===== Top bar ===== */
+.topbar{
+  background:var(--navy-deep);color:#cdd6e8;font-size:.82rem;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:16px}
+.topbar a{color:#cdd6e8;transition:color .2s}
+.topbar a:hover{color:var(--gold-soft)}
+.topbar .tb-right{display:flex;gap:22px;align-items:center}
+.topbar .lang{cursor:pointer;border:1px solid rgba(255,255,255,.2);padding:3px 12px;border-radius:30px;font-weight:600;color:#fff;background:transparent;font-family:inherit;font-size:.78rem}
+.topbar .lang:hover{border-color:var(--gold)}
+@media(max-width:640px){.topbar .tb-left{display:none}}
+
+/* ===== Header / nav ===== */
+header{position:sticky;top:0;z-index:50;background:rgba(246,239,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand .mark{width:46px;height:46px;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+.brand .mark img{width:100%;height:100%;object-fit:contain}
+.brand .bt{line-height:1.15}
+.brand .bt .ar{font-weight:700;color:var(--navy);font-size:1.15rem}
+.brand .bt .la{font-family:'Inter',sans-serif;font-size:.62rem;letter-spacing:.18em;color:var(--gold);font-weight:600}
+.navlinks{display:flex;gap:30px;align-items:center;font-weight:600;font-size:.95rem}
+.navlinks a{position:relative;color:var(--ink);transition:color .2s}
+.navlinks a:hover{color:var(--navy)}
+.navlinks a::after{content:"";position:absolute;bottom:-6px;right:0;width:0;height:2px;background:var(--gold);transition:width .25s}
+.navlinks a:hover::after{width:100%}
+.nav-cta{background:var(--navy);color:#fff!important;padding:10px 22px;border-radius:40px;font-weight:600;transition:background .2s,transform .2s}
+.nav-cta:hover{background:var(--gold);color:var(--navy)!important}
+.nav-cta::after{display:none}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.burger span{width:26px;height:2px;background:var(--navy);transition:.3s}
+@media(max-width:920px){
+  .navlinks{position:fixed;top:118px;right:0;left:0;background:var(--cream-light);flex-direction:column;padding:24px 28px;gap:18px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s;box-shadow:var(--shadow)}
+  .navlinks.open{transform:translateY(0)}
+  .burger{display:flex}
+}
+
+/* ===== Hero ===== */
+.hero{position:relative;background:linear-gradient(150deg,var(--navy-deep),var(--navy) 60%);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 85% 15%,rgba(201,162,75,.18),transparent 45%),
+  radial-gradient(circle at 10% 90%,rgba(201,162,75,.10),transparent 40%);}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding-top:78px;padding-bottom:78px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold-soft);font-family:'Inter';font-size:.72rem;letter-spacing:.22em;font-weight:600;text-transform:uppercase;margin-bottom:22px}
+.hero-eyebrow::before{content:"";width:32px;height:1px;background:var(--gold)}
+.hero h1{font-weight:900;font-size:clamp(2.1rem,4.6vw,3.5rem);line-height:1.18;margin-bottom:8px}
+.hero h1 .gold{color:var(--gold-soft)}
+.hero .sub-en{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.4vw,1.9rem);color:#c6d0e4;font-weight:500;letter-spacing:.02em;margin-bottom:22px;direction:ltr;text-align:right}
+.hero p.lede{font-size:1.05rem;color:#cdd6e8;max-width:520px;margin-bottom:34px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:44px;font-weight:700;font-size:.98rem;transition:.25s;cursor:pointer;border:none;font-family:inherit}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
+.hero-card{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 30px 70px -25px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12)}
+.hero-card img{width:100%;height:100%;object-fit:cover}
+.hero-stats{display:flex;gap:0;margin-top:46px;border-top:1px solid rgba(255,255,255,.14);padding-top:26px}
+.hero-stats .st{flex:1;padding-inline-end:18px}
+.hero-stats .st:not(:last-child){border-inline-end:1px solid rgba(255,255,255,.14)}
+.hero-stats .num{font-family:'Inter';font-weight:700;font-size:1.7rem;color:var(--gold-soft)}
+.hero-stats .lbl{font-size:.82rem;color:#aab6cf}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr;gap:36px}.hero-card{max-height:340px}}
+
+/* ===== Trust strip ===== */
+.trust{background:var(--navy);color:#cdd6e8;padding:26px 0;border-top:1px solid rgba(255,255,255,.06)}
+.trust .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px}
+.trust .ti{display:flex;align-items:center;gap:12px;font-size:.92rem;font-weight:600}
+.trust .ti svg{width:26px;height:26px;color:var(--gold-soft);flex:0 0 auto}
+
+/* ===== Section base ===== */
+section.block{padding:84px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 54px}
+.sec-eyebrow{display:inline-block;color:var(--gold);font-family:'Inter';font-size:.72rem;letter-spacing:.22em;font-weight:600;text-transform:uppercase;margin-bottom:14px}
+.sec-head h2{font-weight:800;font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--navy);line-height:1.25;margin-bottom:14px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* ===== Categories grid ===== */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.cat{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line);transition:.3s;box-shadow:0 6px 20px -14px rgba(14,28,56,.3)}
+.cat:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(201,162,75,.5)}
+.cat .ph{aspect-ratio:1491/1055;overflow:hidden;background:var(--cream)}
+.cat .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cat:hover .ph img{transform:scale(1.04)}
+.cat .cb{padding:18px 20px 22px}
+.cat .cb .num{font-family:'Inter';font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.1em}
+.cat .cb h3{font-size:1.12rem;font-weight:700;color:var(--navy);margin:4px 0 5px}
+.cat .cb .en-h{font-family:'Inter';font-size:.78rem;color:var(--muted);font-weight:500;direction:ltr;text-align:right}
+@media(max-width:980px){.cats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cats{grid-template-columns:1fr}}
+
+/* ===== Why us ===== */
+.why{background:linear-gradient(160deg,var(--navy-deep),var(--navy));color:#fff}
+.why .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.why .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:30px 26px;transition:.3s}
+.why .card:hover{background:rgba(201,162,75,.08);border-color:rgba(201,162,75,.4)}
+.why .ic{width:52px;height:52px;border-radius:12px;background:rgba(201,162,75,.14);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.why .ic svg{width:26px;height:26px;color:var(--gold-soft)}
+.why h3{font-size:1.18rem;font-weight:700;margin-bottom:8px}
+.why p{color:#b9c4da;font-size:.95rem}
+@media(max-width:860px){.why .grid{grid-template-columns:1fr}}
+
+/* ===== Sectors ===== */
+.sectors .row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.sectors .chip{background:#fff;border:1px solid var(--line);border-radius:44px;padding:12px 26px;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:10px;transition:.25s}
+.sectors .chip:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.sectors .chip svg{width:18px;height:18px;color:var(--gold)}
+.sectors .chip:hover svg{color:var(--gold-soft)}
+
+/* ===== Catalog CTA banner ===== */
+.banner{background:var(--navy);color:#fff;border-radius:22px;overflow:hidden;position:relative;display:grid;grid-template-columns:1.3fr 1fr}
+.banner::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(201,162,75,.2),transparent 50%)}
+.banner .bc{position:relative;padding:54px 50px}
+.banner .bc .sec-eyebrow{color:var(--gold-soft)}
+.banner h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;margin-bottom:14px;line-height:1.3}
+.banner p{color:#c6d0e4;margin-bottom:28px;max-width:430px}
+.banner .bimg{position:relative;overflow:hidden}
+.banner .bimg img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.banner .bimg::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,transparent,var(--navy) 92%)}
+@media(max-width:860px){.banner{grid-template-columns:1fr}.banner .bimg{display:none}}
+
+/* ===== Contact ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start}
+.contact-info h3{color:var(--navy);font-size:1.4rem;font-weight:800;margin-bottom:8px}
+.contact-info p.lead{color:var(--muted);margin-bottom:30px}
+.cinfo-item{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.cinfo-item .ic{width:46px;height:46px;flex:0 0 auto;border-radius:12px;background:var(--cream);display:flex;align-items:center;justify-content:center}
+.cinfo-item .ic svg{width:22px;height:22px;color:var(--navy)}
+.cinfo-item .lbl{font-size:.78rem;color:var(--muted);font-weight:600}
+.cinfo-item .val{font-weight:700;color:var(--navy);font-size:1.02rem;direction:ltr;text-align:right}
+.cform{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:var(--shadow)}
+.cform .fg{margin-bottom:18px}
+.cform label{display:block;font-weight:600;font-size:.88rem;margin-bottom:7px;color:var(--navy)}
+.cform input,.cform textarea,.cform select{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:11px;font-family:inherit;font-size:.95rem;background:var(--cream-light);transition:.2s;color:var(--ink)}
+.cform input:focus,.cform textarea:focus,.cform select:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 3px rgba(201,162,75,.15)}
+.cform textarea{resize:vertical;min-height:110px}
+.cform .btn-gold{width:100%;justify-content:center;margin-top:6px}
+.form-note{font-size:.82rem;color:var(--muted);margin-top:14px;text-align:center}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:32px}}
+
+/* ===== Footer ===== */
+footer{background:var(--navy-deep);color:#aab6cf;padding:56px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+.foot-brand .brand .bt .ar{color:#fff}
+.foot-brand p{margin-top:16px;font-size:.92rem;max-width:330px}
+.foot-col h4{color:#fff;font-size:1rem;font-weight:700;margin-bottom:16px}
+.foot-col a{display:block;padding:6px 0;font-size:.92rem;transition:color .2s}
+.foot-col a:hover{color:var(--gold-soft)}
+.foot-bottom{padding:22px 0;text-align:center;font-size:.85rem;color:#7c89a6}
+.foot-bottom .en{display:inline-block}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:28px}}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* WhatsApp float */
+.wa{position:fixed;bottom:26px;left:26px;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px -8px rgba(37,211,102,.6);z-index:60;transition:transform .25s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px;color:#fff}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left" data-ar="توريد متكامل لمشاريع المقاولات في المملكة العربية السعودية" data-en="Integrated supply for contracting projects across Saudi Arabia">توريد متكامل لمشاريع المقاولات في المملكة العربية السعودية</div>
+    <div class="tb-right">
+      <a href="tel:+966568938989" class="en">+966 56 893 8989</a>
+      <button class="lang" id="langBtn">EN</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <nav class="wrap">
+    <a href="#home" class="brand">
+      <span class="mark"><img src="images/logo-icon-navy.png" alt="شعار الغدير النقي"></span>
+      <span class="bt">
+        <span class="ar" data-ar="شركة الغدير النقي" data-en="Al Ghadeer Al Naqi">شركة الغدير النقي</span><br>
+        <span class="la">AL GHADEER AL NAQI</span>
+      </span>
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#categories" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
+      <a href="#why" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a>
+      <a href="#sectors" data-ar="القطاعات" data-en="Sectors">القطاعات</a>
+      <a href="#catalog" data-ar="الكاتالوج" data-en="Catalog">الكاتالوج</a>
+      <a href="#contact" class="nav-cta" data-ar="اطلب عرض سعر" data-en="Request a Quote">اطلب عرض سعر</a>
+    </div>
+    <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-text reveal">
+      <span class="hero-eyebrow">SANITARY WARE &amp; PLUMBING SOLUTIONS</span>
+      <h1>
+        <span data-ar="حلول صحية وسباكة" data-en="Integrated sanitary &amp;">حلول صحية وسباكة</span><br>
+        <span class="gold" data-ar="متكاملة للمشاريع" data-en="plumbing for projects">متكاملة للمشاريع</span>
+      </h1>
+      <div class="sub-en serif">Cleaner Water. Stronger Projects.</div>
+      <p class="lede" data-ar="شريكك الموثوق في توريد المنتجات الصحية والسباكة لمشاريع المقاولات والتطوير. مجموعة متكاملة تحت سقف واحد، بكميات المشاريع، وبدعم فني وتسليم في الموعد." data-en="Your trusted partner in supplying sanitary ware and plumbing for contracting and development projects. A complete range under one roof — at project volumes, with technical support and on-time delivery.">شريكك الموثوق في توريد المنتجات الصحية والسباكة لمشاريع المقاولات والتطوير. مجموعة متكاملة تحت سقف واحد، بكميات المشاريع، وبدعم فني وتسليم في الموعد.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-gold" data-ar="اطلب عرض سعر للمشروع" data-en="Request a Project Quote">اطلب عرض سعر للمشروع</a>
+        <a href="#categories" class="btn btn-ghost" data-ar="تصفّح المنتجات" data-en="Browse Products">تصفّح المنتجات</a>
+      </div>
+      <div class="hero-stats">
+        <div class="st"><div class="num">+10</div><div class="lbl" data-ar="فئات منتجات" data-en="Product Categories">فئات منتجات</div></div>
+        <div class="st"><div class="num">+200</div><div class="lbl" data-ar="صنف وموديل" data-en="Items &amp; Models">صنف وموديل</div></div>
+        <div class="st"><div class="num">100%</div><div class="lbl" data-ar="جاهز للمشاريع" data-en="Project-Ready">جاهز للمشاريع</div></div>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <img src="images/05-project-supply.jpg" alt="توريد المشاريع — الغدير النقي">
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust">
+  <div class="wrap">
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 8 9 10 5-2 9-5 9-10V6z"/></svg><span data-ar="ضمان الجودة" data-en="Quality Assurance">ضمان الجودة</span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><span data-ar="توريد بالجملة" data-en="Bulk Supply">توريد بالجملة</span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg><span data-ar="تسليم في الموعد" data-en="On-Time Delivery">تسليم في الموعد</span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg><span data-ar="دعم فني متخصص" data-en="Technical Support">دعم فني متخصص</span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg><span data-ar="تغطية على مستوى المملكة" data-en="Nationwide Coverage">تغطية على مستوى المملكة</span></div>
+  </div>
+</div>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="block" id="categories">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">OUR PRODUCT RANGE</span>
+      <h2 data-ar="مجموعة منتجات متكاملة تحت سقف واحد" data-en="A complete product range under one roof">مجموعة منتجات متكاملة تحت سقف واحد</h2>
+      <p data-ar="من فلاتر المياه إلى حلول التصريف وتوريد المشاريع — كل ما يحتاجه مشروعك من مصدر واحد موثوق." data-en="From water filtration to drainage and project supply — everything your project needs from one trusted source.">من فلاتر المياه إلى حلول التصريف وتوريد المشاريع — كل ما يحتاجه مشروعك من مصدر واحد موثوق.</p>
+    </div>
+    <div class="cats">
+      <div class="cat reveal"><div class="ph"><img src="images/05-project-supply.jpg" alt="توريد المشاريع"></div><div class="cb"><span class="num">01</span><h3 data-ar="توريد المشاريع" data-en="Project Supply">توريد المشاريع</h3><span class="en-h">Project Supply</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/01-water-filtration.jpg" alt="فلاتر وتنقية المياه"></div><div class="cb"><span class="num">02</span><h3 data-ar="فلاتر وتنقية المياه" data-en="Water Filtration">فلاتر وتنقية المياه</h3><span class="en-h">Water Filtration &amp; Purification</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/06-water-heaters-cisterns.jpg" alt="سخانات وصناديق الطرد"></div><div class="cb"><span class="num">03</span><h3 data-ar="سخانات وصناديق الطرد" data-en="Heaters &amp; Cisterns">سخانات وصناديق الطرد</h3><span class="en-h">Water Heaters &amp; Cisterns</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/07-drains-waste.jpg" alt="المصارف وحلول التصريف"></div><div class="cb"><span class="num">04</span><h3 data-ar="المصارف والتصريف" data-en="Drains &amp; Waste">المصارف والتصريف</h3><span class="en-h">Drains &amp; Waste Solutions</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/08-kitchen-solutions.jpg" alt="حلول المطابخ"></div><div class="cb"><span class="num">05</span><h3 data-ar="حلول المطابخ" data-en="Kitchen Solutions">حلول المطابخ</h3><span class="en-h">Kitchen Solutions</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/03-smart-toilets.jpg" alt="المراحيض الذكية والبيديه"></div><div class="cb"><span class="num">06</span><h3 data-ar="المراحيض الذكية والبيديه" data-en="Smart Toilets &amp; Bidet">المراحيض الذكية والبيديه</h3><span class="en-h">Smart Toilets &amp; Bidet</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/02-bathtubs-wellness.jpg" alt="أحواض الاستحمام والاسترخاء"></div><div class="cb"><span class="num">07</span><h3 data-ar="أحواض الاستحمام" data-en="Bathtubs &amp; Wellness">أحواض الاستحمام</h3><span class="en-h">Bathtubs &amp; Wellness</span></div></div>
+      <div class="cat reveal"><div class="ph"><img src="images/04-bathroom-accessories.jpg" alt="اكسسوارات الحمام"></div><div class="cb"><span class="num">08</span><h3 data-ar="اكسسوارات الحمام" data-en="Bathroom Accessories">اكسسوارات الحمام</h3><span class="en-h">Bathroom Accessories</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow" style="color:var(--gold-soft)">WHY AL GHADEER AL NAQI</span>
+      <h2 style="color:#fff" data-ar="لماذا يختارنا المقاولون والمطورون" data-en="Why contractors &amp; developers choose us">لماذا يختارنا المقاولون والمطورون</h2>
+      <p style="color:#b9c4da" data-ar="نحن لسنا مجرد مورّد — نحن شريك توريد مصمّم خصيصاً لإيقاع المشاريع ومتطلباتها." data-en="We are not just a supplier — we are a supply partner built for the pace and demands of real projects.">نحن لسنا مجرد مورّد — نحن شريك توريد مصمّم خصيصاً لإيقاع المشاريع ومتطلباتها.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3 data-ar="توريد بكميات المشاريع" data-en="Project-Volume Supply">توريد بكميات المشاريع</h3><p data-ar="قدرة على توريد الكميات الكبيرة للمشاريع السكنية والتجارية والبنية التحتية دون انقطاع." data-en="Capacity to supply large volumes for residential, commercial, and infrastructure projects without interruption.">قدرة على توريد الكميات الكبيرة للمشاريع السكنية والتجارية والبنية التحتية دون انقطاع.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 8 9 10 5-2 9-5 9-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-ar="جودة مضمونة" data-en="Assured Quality">جودة مضمونة</h3><p data-ar="منتجات مختارة بعناية تلبّي معايير الأداء والمتانة، مع مقاومة للتآكل تناسب ظروف المنطقة." data-en="Carefully selected products that meet performance and durability standards, with corrosion resistance suited to the region.">منتجات مختارة بعناية تلبّي معايير الأداء والمتانة، مع مقاومة للتآكل تناسب ظروف المنطقة.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3 data-ar="تسليم في الموعد" data-en="On-Time Delivery">تسليم في الموعد</h3><p data-ar="جدولة دقيقة تواكب مراحل التنفيذ، فلا توقّف في الموقع بسبب تأخّر التوريد." data-en="Precise scheduling aligned with execution phases — no site stoppages from late supply.">جدولة دقيقة تواكب مراحل التنفيذ، فلا توقّف في الموقع بسبب تأخّر التوريد.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div><h3 data-ar="دعم فني وتنسيق" data-en="Technical &amp; Coordination">دعم فني وتنسيق</h3><p data-ar="فريق فني يساعد في اختيار المواصفات المناسبة وتنسيق التوريد مع جدول المشروع." data-en="A technical team that helps select the right specs and coordinate supply with the project schedule.">فريق فني يساعد في اختيار المواصفات المناسبة وتنسيق التوريد مع جدول المشروع.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 data-ar="تغطية وطنية" data-en="Nationwide Reach">تغطية وطنية</h3><p data-ar="خدمة توريد تغطّي مشاريع المملكة، مع باقات مخصصة لاحتياجات كل مشروع." data-en="Supply service covering projects across the Kingdom, with packages tailored to each project's needs.">خدمة توريد تغطّي مشاريع المملكة، مع باقات مخصصة لاحتياجات كل مشروع.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3 data-ar="مصدر واحد متكامل" data-en="One Complete Source">مصدر واحد متكامل</h3><p data-ar="من الفلاتر إلى المصارف والمطابخ — تقلّل عدد الموردين وتبسّط مشترياتك." data-en="From filters to drains and kitchens — fewer suppliers and simpler procurement.">من الفلاتر إلى المصارف والمطابخ — تقلّل عدد الموردين وتبسّط مشترياتك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTORS ===== -->
+<section class="block sectors" id="sectors" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">SECTORS WE SERVE</span>
+      <h2 data-ar="نخدم كل أنواع المشاريع" data-en="Serving every kind of project">نخدم كل أنواع المشاريع</h2>
+    </div>
+    <div class="row reveal">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg><span data-ar="المجمعات السكنية" data-en="Residential Compounds">المجمعات السكنية</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg><span data-ar="الأبراج والمباني التجارية" data-en="Towers &amp; Commercial">الأبراج والمباني التجارية</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M4 20V8l8-5 8 5v12"/><path d="M9 20v-6h6v6"/></svg><span data-ar="الفنادق والضيافة" data-en="Hotels &amp; Hospitality">الفنادق والضيافة</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22V4a2 2 0 0 1 2-2h8l6 6v14"/><path d="M14 2v6h6"/></svg><span data-ar="المرافق الحكومية" data-en="Government Facilities">المرافق الحكومية</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9 12 3l9 6v11a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span data-ar="الفلل والمشاريع الخاصة" data-en="Villas &amp; Private">الفلل والمشاريع الخاصة</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span data-ar="المراكز التجارية" data-en="Malls &amp; Retail">المراكز التجارية</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span data-ar="المستشفيات والمرافق الصحية" data-en="Healthcare">المستشفيات والمرافق الصحية</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATALOG BANNER ===== -->
+<section class="block" id="catalog">
+  <div class="wrap reveal">
+    <div class="banner">
+      <div class="bc">
+        <span class="sec-eyebrow">FULL PRODUCT CATALOG</span>
+        <h2 data-ar="حمّل الكاتالوج الكامل للمشاريع" data-en="Download the full project catalog">حمّل الكاتالوج الكامل للمشاريع</h2>
+        <p data-ar="كاتالوج احترافي من ٨ صفحات يغطّي كامل نطاق المنتجات بالتفصيل — جاهز للمشاركة مع فريق المشتريات أو الاستشاري." data-en="A professional 8-page catalog covering the full product range in detail — ready to share with your procurement team or consultant.">كاتالوج احترافي من ٨ صفحات يغطّي كامل نطاق المنتجات بالتفصيل — جاهز للمشاركة مع فريق المشتريات أو الاستشاري.</p>
+        <div class="hero-cta">
+          <a href="Al_Ghadeer_Al_Naqi_Catalog.pdf" download class="btn btn-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span data-ar="تحميل الكاتالوج PDF" data-en="Download Catalog (PDF)">تحميل الكاتالوج PDF</span></a>
+          <a href="#contact" class="btn btn-ghost" data-ar="اطلب نسخة مطبوعة" data-en="Request a printed copy">اطلب نسخة مطبوعة</a>
+        </div>
+      </div>
+      <div class="bimg"><img src="images/02-bathtubs-wellness.jpg" alt="كاتالوج الغدير النقي"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="block" id="contact" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">GET A PROJECT QUOTE</span>
+      <h2 data-ar="لنبدأ بتوريد مشروعك" data-en="Let's supply your project">لنبدأ بتوريد مشروعك</h2>
+      <p data-ar="أرسل تفاصيل مشروعك وسيتواصل معك فريقنا بعرض سعر مخصّص خلال وقت قصير." data-en="Send your project details and our team will get back with a tailored quote shortly.">أرسل تفاصيل مشروعك وسيتواصل معك فريقنا بعرض سعر مخصّص خلال وقت قصير.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3 data-ar="تواصل معنا مباشرة" data-en="Reach us directly">تواصل معنا مباشرة</h3>
+        <p class="lead" data-ar="نحن جاهزون للإجابة على استفساراتك وتوريد احتياجات مشروعك." data-en="We're ready to answer your questions and supply your project's needs.">نحن جاهزون للإجابة على استفساراتك وتوريد احتياجات مشروعك.</p>
+        <a class="cinfo-item" href="tel:+966568938989">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><div class="lbl" data-ar="الهاتف / واتساب" data-en="Phone / WhatsApp">الهاتف / واتساب</div><div class="val">+966 56 893 8989</div></div>
+        </a>
+        <a class="cinfo-item" href="mailto:info@alghadeeralnaqi.com">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <div><div class="lbl" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</div><div class="val">info@alghadeeralnaqi.com</div></div>
+        </a>
+        <a class="cinfo-item" href="https://alghadeeralnaqi.com">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <div><div class="lbl" data-ar="الموقع الإلكتروني" data-en="Website">الموقع الإلكتروني</div><div class="val">alghadeeralnaqi.com</div></div>
+        </a>
+        <div class="cinfo-item" style="border-bottom:none">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="lbl" data-ar="الموقع" data-en="Location">الموقع</div><div class="val" data-ar="المملكة العربية السعودية" data-en="Saudi Arabia" style="direction:rtl;text-align:right">المملكة العربية السعودية</div></div>
+        </div>
+      </div>
+      <div class="cform reveal">
+        <div class="fg"><label data-ar="الاسم / الشركة" data-en="Name / Company">الاسم / الشركة</label><input id="f-name" type="text" placeholder="..."></div>
+        <div class="fg"><label data-ar="رقم الجوال" data-en="Phone">رقم الجوال</label><input id="f-phone" type="tel" placeholder="+966 5X XXX XXXX"></div>
+        <div class="fg"><label data-ar="نوع المشروع" data-en="Project Type">نوع المشروع</label>
+          <select id="f-type">
+            <option data-ar="مجمع سكني" data-en="Residential Compound">مجمع سكني</option>
+            <option data-ar="برج / تجاري" data-en="Tower / Commercial">برج / تجاري</option>
+            <option data-ar="فندق / ضيافة" data-en="Hotel / Hospitality">فندق / ضيافة</option>
+            <option data-ar="فلل خاصة" data-en="Private Villas">فلل خاصة</option>
+            <option data-ar="أخرى" data-en="Other">أخرى</option>
+          </select>
+        </div>
+        <div class="fg"><label data-ar="تفاصيل الطلب" data-en="Request Details">تفاصيل الطلب</label><textarea id="f-msg" placeholder="..."></textarea></div>
+        <button class="btn btn-gold" id="sendBtn" data-ar="إرسال عبر واتساب" data-en="Send via WhatsApp">إرسال عبر واتساب</button>
+        <p class="form-note" data-ar="سيتم فتح واتساب برسالة جاهزة تحتوي على بياناتك." data-en="WhatsApp will open with a ready message containing your details.">سيتم فتح واتساب برسالة جاهزة تحتوي على بياناتك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="mark" style="width:42px;height:42px"><img src="images/logo-icon-gold.png" alt="شعار الغدير النقي"></span>
+          <span class="bt"><span class="ar" data-ar="شركة الغدير النقي" data-en="Al Ghadeer Al Naqi">شركة الغدير النقي</span><br><span class="la">AL GHADEER AL NAQI</span></span>
+        </div>
+        <p data-ar="حلول صحية وسباكة متكاملة لمشاريع المقاولات والتطوير في المملكة العربية السعودية." data-en="Integrated sanitary and plumbing solutions for contracting and development projects across Saudi Arabia.">حلول صحية وسباكة متكاملة لمشاريع المقاولات والتطوير في المملكة العربية السعودية.</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+        <a href="#categories" data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
+        <a href="#why" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a>
+        <a href="#sectors" data-ar="القطاعات" data-en="Sectors">القطاعات</a>
+        <a href="#catalog" data-ar="الكاتالوج" data-en="Catalog">الكاتالوج</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-ar="تواصل" data-en="Contact">تواصل</h4>
+        <a href="tel:+966568938989" class="en" style="direction:ltr;text-align:right">+966 56 893 8989</a>
+        <a href="mailto:info@alghadeeralnaqi.com" class="en" style="direction:ltr;text-align:right">info@alghadeeralnaqi.com</a>
+        <a href="https://alghadeeralnaqi.com" class="en" style="direction:ltr;text-align:right">alghadeeralnaqi.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-ar="© 2026 شركة الغدير النقي. جميع الحقوق محفوظة." data-en="© 2026 Al Ghadeer Al Naqi. All rights reserved.">© 2026 شركة الغدير النقي. جميع الحقوق محفوظة.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/966568938989" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.6-.9-2.1-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2"/></svg>
+</a>
+
+<script>
+// Mobile menu
+const burger=document.getElementById('burger'),navlinks=document.getElementById('navlinks');
+burger.addEventListener('click',()=>{navlinks.classList.toggle('open');burger.classList.toggle('on')});
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
+
+// Language toggle
+let lang='ar';
+const langBtn=document.getElementById('langBtn');
+function setLang(l){
+  lang=l;
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('[data-ar]').forEach(el=>{
+    const v=el.getAttribute('data-'+l);
+    if(v!==null) el.innerHTML=v;
+  });
+  langBtn.textContent=(l==='ar')?'EN':'ع';
+  document.body.style.fontFamily=(l==='ar')?"'Cairo',sans-serif":"'Inter',sans-serif";
+}
+langBtn.addEventListener('click',()=>setLang(lang==='ar'?'en':'ar'));
+
+// Reveal on scroll
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// WhatsApp form
+document.getElementById('sendBtn').addEventListener('click',()=>{
+  const n=document.getElementById('f-name').value||'-';
+  const p=document.getElementById('f-phone').value||'-';
+  const t=document.getElementById('f-type').selectedOptions[0].textContent;
+  const m=document.getElementById('f-msg').value||'-';
+  const txt=`طلب عرض سعر - الغدير النقي%0A----------%0Aالاسم/الشركة: ${n}%0Aالجوال: ${p}%0Aنوع المشروع: ${t}%0Aالتفاصيل: ${m}`;
+  window.open(`https://wa.me/966568938989?text=${txt}`,'_blank');
+});
+</script>
+</body>
+</html>
